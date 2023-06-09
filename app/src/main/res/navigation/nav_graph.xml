@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/areaFragment">
+
+    <fragment
+        android:id="@+id/areaFragment"
+        android:name="com.eniskaner.bestareasonearth.view.AreaFragment"
+        android:label="AreaFragment" >
+        <action
+            android:id="@+id/action_areaFragment_to_areaDetailsFragment"
+            app:destination="@id/areaDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/areaDetailsFragment"
+        android:name="com.eniskaner.bestareasonearth.view.AreaDetailsFragment"
+        android:label="AreaDetailsFragment" >
+        <action
+            android:id="@+id/action_areaDetailsFragment_to_imageApiFragment"
+            app:destination="@id/imageApiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageApiFragment"
+        android:name="com.eniskaner.bestareasonearth.view.ImageApiFragment"
+        android:label="ImageApiFragment" />
+</navigation>
