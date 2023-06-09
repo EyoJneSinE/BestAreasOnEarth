@@ -1,7 +1,8 @@
-package com.eniskaner.bestareasonearth
+package com.eniskaner.bestareasonearth.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.eniskaner.bestareasonearth.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
