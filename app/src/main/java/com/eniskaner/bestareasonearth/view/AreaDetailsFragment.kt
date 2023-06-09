@@ -2,6 +2,7 @@ package com.eniskaner.bestareasonearth.view
 
 import android.os.Bundle
 import android.view.View
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.eniskaner.bestareasonearth.R
@@ -21,5 +22,11 @@ class AreaDetailsFragment: Fragment(R.layout.fragment_area_details) {
         binding.areaImageView.setOnClickListener {
             findNavController().navigate(AreaDetailsFragmentDirections.actionAreaDetailsFragmentToImageApiFragment())
         }
+        val callBack = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                findNavController().popBackStack()
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(callBack)
     }
 }
