@@ -5,10 +5,14 @@ import android.view.View
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.RequestManager
 import com.eniskaner.bestareasonearth.R
 import com.eniskaner.bestareasonearth.databinding.FragmentAreaDetailsBinding
+import javax.inject.Inject
 
-class AreaDetailsFragment: Fragment(R.layout.fragment_area_details) {
+class AreaDetailsFragment @Inject constructor(
+    val glide: RequestManager
+) : Fragment(R.layout.fragment_area_details) {
 
     private var fragmentAreaDetailsBinding : FragmentAreaDetailsBinding? = null
 
