@@ -14,13 +14,13 @@
         android:layout_marginBottom="25dp"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/ic_launcher_foreground"
-        app:layout_constraintBottom_toTopOf="@+id/areNameText"
+        app:layout_constraintBottom_toTopOf="@+id/areaNameText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
-        android:id="@+id/areNameText"
+        android:id="@+id/areaNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -42,8 +42,8 @@
         android:inputType="text"
         android:hint="Enter City Name"
         app:layout_constraintBottom_toTopOf="@id/areaFamousWhyText"
-        app:layout_constraintStart_toStartOf="@id/areNameText"
-        app:layout_constraintTop_toBottomOf="@id/areNameText"
+        app:layout_constraintStart_toStartOf="@id/areaNameText"
+        app:layout_constraintTop_toBottomOf="@id/areaNameText"
         />
 
     <EditText
