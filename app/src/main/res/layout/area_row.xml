@@ -13,8 +13,8 @@
         android:padding="16dp" >
         <ImageView
             android:id="@+id/areaRowImageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:src="@drawable/ic_launcher_foreground"
             android:scaleType="centerCrop"
             />
@@ -30,7 +30,8 @@
                 android:text="Famous Area Name"
                 android:layout_marginLeft="14dp"
                 android:layout_marginBottom="6dp"
-                android:textSize="26sp" />
+                android:textStyle="bold"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/areaRowFamousCityNameText"
@@ -39,28 +40,28 @@
                 android:text="Famous Area City Name"
                 android:layout_marginLeft="14dp"
                 android:layout_marginBottom="6dp"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/areaRowFamousWhyText"
+                android:id="@+id/areaRowFamousSpendMoneyText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Famous Area Why is That"
+                android:text="Area Possible You Can Spend Amount"
                 android:layout_marginLeft="14dp"
                 android:layout_marginBottom="6dp"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/areaRowFamousSpendMoneyText"
+        android:id="@+id/areaRowFamousWhyText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Area Possible You Can Spend Amount"
+        android:text="Famous Area Why is That"
         android:layout_marginLeft="14dp"
         android:layout_marginBottom="6dp"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
 </LinearLayout>
