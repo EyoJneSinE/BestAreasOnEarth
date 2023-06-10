@@ -5,9 +5,13 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.eniskaner.bestareasonearth.R
+import com.eniskaner.bestareasonearth.adapter.AreaRecyclerAdapter
 import com.eniskaner.bestareasonearth.databinding.FragmentAreasBinding
+import javax.inject.Inject
 
-class AreaFragment: Fragment(R.layout.fragment_areas) {
+class AreaFragment @Inject constructor(
+    val areaRecyclerAdapter: AreaRecyclerAdapter
+) : Fragment(R.layout.fragment_areas) {
 
     private var fragmentBinding : FragmentAreasBinding? = null
 
