@@ -13,9 +13,9 @@ import com.eniskaner.bestareasonearth.R
 import com.eniskaner.bestareasonearth.roomdb.Area
 import javax.inject.Inject
 
-class AreaRcyclerAdapter @Inject constructor(
+class AreaRecyclerAdapter @Inject constructor(
     val glide : RequestManager
-): RecyclerView.Adapter<AreaRcyclerAdapter.AreaViewHolder>() {
+): RecyclerView.Adapter<AreaRecyclerAdapter.AreaViewHolder>() {
     class AreaViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
     private val diffUtil = object : DiffUtil.ItemCallback<Area>() {
