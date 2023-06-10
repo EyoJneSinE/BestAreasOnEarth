@@ -40,14 +40,13 @@ class AreaRecyclerAdapter @Inject constructor(
     }
 
     override fun onBindViewHolder(holder: AreaViewHolder, position: Int) {
-        val area = areas[position]
         holder.itemView.apply {
-            val imageView = findViewById<ImageView>(R.id.areaImageView)
-            val areaNameText = findViewById<TextView>(R.id.areaNameText)
-            val areaCityNameText = findViewById<TextView>(R.id.areaCityNameText)
-            val areaFamousWhyText = findViewById<TextView>(R.id.areaFamousWhyText)
-            val areaSpendAmountText = findViewById<TextView>(R.id.areaSpendMoneyText)
-
+            val imageView = findViewById<ImageView>(R.id.areaRowImageView)
+            val areaNameText = findViewById<TextView>(R.id.areaRowFamousNameText)
+            val areaCityNameText = findViewById<TextView>(R.id.areaRowFamousCityNameText)
+            val areaFamousWhyText = findViewById<TextView>(R.id.areaRowFamousWhyText)
+            val areaSpendAmountText = findViewById<TextView>(R.id.areaRowFamousSpendMoneyText)
+            val area = areas[position]
             glide.load(area.imageUrl).into(imageView)
             areaNameText.text = "Area Name: ${area.areaName}"
             areaCityNameText.text = "Area City Name: ${area.areaCityName}"
